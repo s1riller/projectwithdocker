@@ -1,0 +1,10 @@
+.error-message{
+    display:flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.error-message p{
+    margin: 0px;
+    color: red;
+}

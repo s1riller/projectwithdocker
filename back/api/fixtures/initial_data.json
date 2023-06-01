@@ -1,0 +1,40 @@
+[
+    {
+        "model": "api.type_command",
+        "pk": 1,
+        "fields": {
+            "type_name": "Type 1"
+        }
+    },
+    {
+        "model": "api.type_command",
+        "pk": 2,
+        "fields": {
+            "type_name": "Type 2"
+        }
+    },
+    {
+        "model": "api.bot",
+        "pk": 1,
+        "fields": {
+            "login_id": 1,
+            "app_name": "My App",
+            "token": "my_token",
+            "url": "https://example.com",
+            "name": "My Bot",
+            "launch_status": true
+        }
+    },
+    {
+        "model": "api.command",
+        "pk": 1,
+        "fields": {
+            "bot_id": 1,
+            "command_name": "/start",
+            "type_id": 1,
+            "link_status": false,
+            "media_status": false
+        }
+    }
+
+]

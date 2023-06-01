@@ -1,0 +1,100 @@
+
+/* Connection fonts */
+@font-face {
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Formular"),
+       /* Если не получилось, загрузит woff2 */
+       url("../../fonts/Formular/Formular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("../../fonts/Formular/Formular.woff") format("woff");
+}
+
+/* index styles */
+
+body {
+  font-family: "Formular", "Arial", sans-serif;
+
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+ padding-left: 240px;
+  padding-right: 240px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #FF941A;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+
+  text-align: center;
+}
+.logo{
+  margin-left: 100px;
+
+}
+
+
+.myfield{
+            border:1px solid #ccc;
+            border-radius:2px;
+            height:25px;
+            width:200px;
+            margin: 10px 10px 10px 0;
+        }
+
+.my-submit-class {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,50 @@
+
+
+.inputData{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #939393;
+    min-width: 350px;
+    max-width: 500px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+.inputData-block{
+    background-color: #efefef;
+    color: #000000;
+    border: 1px solid #939393;
+    min-width: 350px;
+    max-width: 500px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+.button-settings{
+    /* padding: 10px 20px; */
+    background-color: #FF941A;
+    border: 1px solid #FF941A;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    /* margin: 0 10px; */
+    cursor: pointer;
+    width: auto;
+    font-family: 'Formular';
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.settings{
+    padding-left: 5%;
+    padding-top: 1%;
+    font-family: 'Formular';
+    background-color: #efefef;
+    height: 80vh;
+    margin: 0px;
+}
+
+.inputForm p{
+    margin: 0px;
+    padding: 0px
+}

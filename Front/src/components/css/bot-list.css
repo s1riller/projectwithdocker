@@ -1,0 +1,94 @@
+  .bot-list{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .header-bot-list{
+    padding-top: 2%;
+    margin: 0px;
+    display: flex;
+    margin-bottom: 3%;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+    height: auto;
+  }
+  
+  .add-bot-field{
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-bot-list p, input, button{
+    margin: 0px;
+    margin-right: 5%;
+    border-radius: 3px;
+  }
+  .header-bot-list button{
+    display: inline-flex;
+    text-align: center;
+    background-color: #FF941A;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0px;
+  }
+  .header-bot-list button img{
+    width: 20%;
+    height: 20%;
+  }
+  .header-bot-list button p{
+    vertical-align: center;
+    color: #ffffff;
+  }
+  .header-bot-list p{
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: auto;
+  }
+  .header-bot-list input{
+    border: 1px solid #393330;
+    text-align: left;
+    outline: none;
+    width: 230px
+  }
+
+.bot-list-field{
+    background-color: #EFEFEF;
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 50px 50px 0px 0px;
+
+  }
+
+.bot-field{
+  margin: 0px;
+  padding-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  
+}
+
+.bot-name-field{
+  padding-top: 10px;
+  margin-right: 5px;
+}
+
+.bot-name-field p{
+  color: red;
+  height: 10px;
+}

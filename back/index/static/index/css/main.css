@@ -1,0 +1,359 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	/*outline: none;*/
+}
+
+a:focus,
+a:active {
+	/* outline: none;*/
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover  {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+/* End reset */
+
+/* Connection fonts */
+@font-face {
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Formular"),
+       /* Если не получилось, загрузит woff2 */
+       url("../../fonts/Formular/Formular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("../../fonts/Formular/Formular.woff") format("woff");
+}
+
+/* index styles */
+
+body {
+  font-family: "Formular", "Arial", sans-serif;
+
+}
+
+/* Стили для подложки */
+
+.overlay {
+
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+
+
+ /* Стили для модальных окон */
+
+ .modal {
+
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+
+ /* Стили для кнопки закрытия */
+
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+
+
+ /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+ a{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #414b52;
+    margin: 10px;
+    color: #fff;
+    border-radius: 3px;
+ }
+
+ .js-open-modal-login{
+    text-decoration: none;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 56px;
+    background-color: #F2F2F2;
+    color: #000000;
+    border-radius: 3px;
+
+ }
+ .btn-signup{
+
+
+background: #FF941A;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+}
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.logo{
+
+   width: 15%;
+   left: 15px;
+   top: 150px;
+   float: left;
+   background: #F2F2F2;
+
+}
+
+.logo-vector{
+   position: absolute;
+   width: 78px;
+   height: 48px;
+   left: 9px;
+   top: 24px;
+
+   background: #F2F2F2;
+}
+
+.head-main{
+   height: 150px;
+   background: #F2F2F2;
+   margin: 0px;
+   padding: 0px;
+
+}
+.heading-h2{
+   /* Heading 2 */
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 56px;
+   /* identical to box height, or 140% */
+   color: #000000;
+}
+
+.left-header{
+   float: left;
+}
+
+.center-header{
+   float: center;
+}
+
+.right-header{
+   float: right;
+}
+
+.top-menu{}
+
+.top-menu li{
+   display: inline-block;
+}
+
+.header-container{
+   margin: 20px;
+   padding: 20px;
+
+}
+
+.middle-menu{
+   text-align: left;
+   margin-bottom: 30px;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-bottom: 90px;
+}
+
+.middle-menu li{
+   width: 400px;
+   display: inline-block;
+   text-align: left;
+   vertical-align: middle;
+
+}
+
+main{
+   background: #F2F2F2;
+   margin: 0px;
+   padding: 1px;
+}
+
+footer{
+   background: #393330;
+   color: #F2F2F2;
+   display: inline-block;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+
+.footer-menu{
+   padding: 10px 15px;
+   margin: 10px 15px;
+}
+
+.h1_chatbot{
+font-size: 48px;
+font-weight: 400;
+line-height: 59px;
+letter-spacing: 0em;
+text-align: left;
+width: 460px;
+    padding-bottom: 13px;
+}
+
+.h2_desc{
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.telegram-logo{
+    padding-left: 120px;
+}
+
+.btn-create_bot{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin-left: 115px;
+    position: absolute;
+    width: 310px;
+    height: 75px;
+    left: 153px;
+    top: 482px;
+
+    background: #FF941A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
